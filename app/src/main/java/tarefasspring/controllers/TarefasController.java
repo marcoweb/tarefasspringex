@@ -19,7 +19,7 @@ public class TarefasController {
     @RequestMapping("")
     public String list(Model model) {
         model.addAttribute("tarefas", repo.findAll());
-        return "tarefas.jsp"; 
+        return "WEB-INF/tarefas.jsp"; 
     }
 
     @RequestMapping(value="", method = RequestMethod.POST)
